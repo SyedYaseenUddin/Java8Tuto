@@ -21,6 +21,15 @@ public class LE001 {
 	public LE001(final String... elements) {
 		this.elements = elements;
 		this.list = Arrays.asList(this.elements);
+		/*
+		// Tradition Methods
+		this.nameSort = new Comparator(){
+			public int compare(Object p1, Object p2) {
+          		 	return ((String)p1).compareTo(((String)p2));
+			 }
+        	}
+		};
+		*/
 		this.nameSort = (p1, p2) -> p1.compareTo(p2); // compare method is used
 														// under lambda
 														// expression.
